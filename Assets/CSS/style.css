@@ -288,3 +288,12 @@ input {
   margin-bottom: 1.67em;
   text-align: justify;
 }
+
+/*========== Buttons ==========*/
+.button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1.1em 2.1em;
+  border-radius: 1.56rem;
+}
