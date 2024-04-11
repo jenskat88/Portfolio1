@@ -31,7 +31,7 @@
   --fs-xs: 0.75rem;
 
 
-  --mediun: 500;
+  --medium: 500;
   --semibold: 600;
   --bold: 700;
 }
@@ -108,6 +108,28 @@ input {
   display: grid;
 }
 
+.section {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+
+.section__title {
+  font-size: var(--fs-h2);
+  line-height: 1.17em;
+  font-weight: var(--medium);
+  margin-bottom: 1.12em;
+}
+
+.text-lg {
+  font-size: var(--fs-lg);
+  line-height: 1.67em;
+}
+
+.text-sm {
+  font-size: var(--fs-sm);
+  line-height: 1.43em;
+}
+
 /*========== Header ==========*/
 
 .header {
@@ -142,18 +164,34 @@ input {
   opacity: 0.5;
 }
 
-nav__link::after {
+.nav__link::after {
   content: '';
   position: absolute;
   bottom: 0;
   right: -0.5rem;
   width: 7px;
-  height: 2px;background-color: #fff;
+  height: 2px;
+  background-color: #fff;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.nav__link:hoover::after {
+  opacity: 1;
 }
 
 .nav__close,
 .nav__toggle {
   display: none;
+}
+
+/*Active Link*/
+.active-link {
+  opacity: 0.5;
+}
+
+.active-link::after {
+  opacity: 1;
 }
 
 /*========== Home ==========*/
@@ -163,6 +201,7 @@ nav__link::after {
   background-position: 50%;
   padding-top: 5.5rem;
   position: relative;
+  margin-bottom: 2.5rem;
 }
 
 .home::before {
@@ -242,4 +281,10 @@ nav__link::after {
 
 .home_social-link:hover {
   opacity: 1;
+}
+
+/*========== Hello ==========*/
+.hello__details {
+  margin-bottom: 1.67em;
+  text-align: justify;
 }
