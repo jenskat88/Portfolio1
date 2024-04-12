@@ -309,3 +309,13 @@ input {
   align-items: flex-start;
   column-gap: 0.3rem;
 }
+
+/*========== Services ==========*/
+.services__container {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.875rem;
+}
+
+.services__icon {
+  width: 32px;
+}
