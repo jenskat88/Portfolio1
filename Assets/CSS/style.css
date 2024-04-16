@@ -345,8 +345,12 @@ input {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--text-color);
   animation: service-dot 2s linear infinite;
+  animation-play-state: paused;
+}
+
+.services__item:hover .services__dot {
+  animation-play-state: running;
 }
 
 @keyframes service-dot {
@@ -367,4 +371,8 @@ input {
   position: absolute;
   top: 0;
   left: 0.9rem;
+}
+
+.services__title {
+  margin-bottom: 0.8em;
 }
