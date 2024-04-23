@@ -130,6 +130,11 @@ input {
   line-height: 1.43em;
 }
 
+.text-xs {
+  font-size: var(--fs-xs);
+  line-height: 1.5em;
+}
+
 .skills__title,
 .resume__title {
   color: var(--text-color);
@@ -460,4 +465,46 @@ input {
 .skills__percentage {
   display: block;
   background-color: var(--primary-color-alt);
+}
+
+/*========== Projects ==========*/
+.project__categories {
+  display: flex;
+  column-gap: 3rem;
+  margin-bottom: 1.875rem;
+}
+
+.category__btn {
+  color: var(--text-color-alt);
+  font-weight: var(--bold);
+  font-family: var(--mono-font);
+  position: relative;
+}
+
+.category__btn:hover {
+  color: var(--primary-color);
+}
+
+.category__btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: -0.5rem;
+  width: 7px;
+  height: 2px;
+  background-color: var(--primary-color);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.category__btn:hover::after {
+  opacity: 1;
+}
+
+.active-work {
+  color: var(--primary-color);
+}
+
+.active-work::after {
+opacity: 1;
 }
