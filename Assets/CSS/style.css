@@ -558,3 +558,35 @@ opacity: 1;
   font-family: var(--mono-font);
 
 }
+
+/*========== Blog ==========
+.posts__container {
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.875rem;
+  margin-bottom: 2.5rem;
+}
+
+.post__img {
+  vertical-align: middle;
+}
+
+.post_content {
+  border: 1px solid var(--border-color);
+  padding: 1.25rem 1.875rem 2.5rem 1.25rem;
+}
+
+.post__date {
+  text-transform: uppercase;
+  color: var(--text-color-alt);
+  margin-bottom: 0.8rem;
+}
+
+.post__title {
+  margin-bottom: 1.1em;
+}
+
+.post__description {
+  color: var(--text-color-alt);
+  text-align: center;
+}
+*/
