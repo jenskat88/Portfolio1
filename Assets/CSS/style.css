@@ -130,6 +130,13 @@ input {
   line-height: 1.43em;
 }
 
+.skills__title,
+.resume__title {
+  color: var(--text-color);
+  letter-spacing: 0.4em;
+  margin-bottom: 2.8em;
+}
+
 /*========== Header ==========*/
 
 .header {
@@ -452,5 +459,5 @@ input {
 
 .skills__percentage {
   display: block;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-alt);
 }
