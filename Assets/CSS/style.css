@@ -669,4 +669,42 @@ position: relative;
 .contact__input {
   width: 100%;
   border: 1px solid var(--border-color);
+  border-radius: 3px;
+  padding: 0.625rem;
+}
+
+.textarea {
+  height: 7.2rem;
+  resize: none;
+}
+
+.contact__input:focus {
+  box-shadow: inset 0 0 5px 0 #fff;
+}
+
+.contact__message {
+  position: absolute;
+  bottom: 34%;
+  left: 0;
+  font-family: var(--mono-font);
+  color: #fff;
+}
+
+.color-light {
+  opacity: 0;
+}
+
+.color-dark {
+  opacity: 0.4;
+}
+.contact__button {
+  margin-top: 1.875rem;
+  width: 100%;
+  box-shadow: 0 1px 29px rgb(0 0 0 / 40%);
+}
+
+.footer__copy {
+  opacity: 0.4;
+  margin-top: 3.75rem;
+  text-align: center;
 }
