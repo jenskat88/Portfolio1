@@ -300,6 +300,7 @@ input {
 .hello__details {
   margin-bottom: 1.67em;
   text-align: justify;
+  font-family: var(--roboto-font);
 }
 
 /*========== Buttons ==========*/
@@ -435,6 +436,7 @@ input {
 
 .resume__description {
   text-align: justify;
+  font-family: var(--roboto-font);
 }
 
 /*========== Skills ==========*/
