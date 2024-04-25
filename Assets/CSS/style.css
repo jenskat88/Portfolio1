@@ -259,6 +259,7 @@ input {
   font-size: var(--fs-h1);
   line-height: 1.14rem;
   margin: 0.9rem 0 0.23em;
+  padding-bottom: 1.2rem;
 }
 
 .home__work {
